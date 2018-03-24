@@ -19,13 +19,14 @@
     - name: Login to docker
       docker_login:
         username: jaikrish
-        password: mymobileW580
+        password: mymobile
         email: jaimugun@gmail.com
 
     - name: Launch docker container
       docker_container:
-        name: bottlecontainer
+        name: nginx
         image: jaikrish/nginx:latest
+        state: present
         ports:
           - "4040:80"
 
