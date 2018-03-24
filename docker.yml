@@ -26,7 +26,6 @@
       docker_container:
         name: nginx
         image: jaikrish/nginx:latest
-        state: present
         ports:
           - "4040:80"
 
